@@ -5,12 +5,12 @@
     <title>JSON SandBox</title>
 </head>
 <body>
-
+<ul id="people"></ul>
 <script>
     var person = {
         name: "Brad",
         age: 35,
-        adress: {
+        address: {
             street: "5 main st",
             city: "Boston"
         },
@@ -39,7 +39,6 @@
 
     var output = '';
     for (var i = 0;i < people.length; i++){
-        // console.log(people[i]);
         output += '<li>'+people[i].name+'</li>';
     }
     document.getElementById('people').innerHTML = output;
